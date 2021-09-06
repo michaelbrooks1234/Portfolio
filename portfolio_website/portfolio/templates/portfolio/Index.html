@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio-MB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load  static %}
+        <link href={% static "portfolio/index.css" %} rel="stylesheet" {% now "U" %}>
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <ul class="nav">
+                    <li><button id="about">INTRO</button></li>
+                    <li id="projects"><button>PROJECTS</button></li>
+                    <li id="contact"><button>CONTACT</button></li>
+                </ul>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="container2"></div>
+            </div>
+        </div>
+        <div id="sidebar">  
+            <a href='https://github.com/michaelbrooks1234' target="_blank"><img src={% static "portfolio/github.png" %} id='git'></a>
+            <a href='https://my.indeed.com/p/michaelb-xhk6zk0' target="_blank"><img src={% static "portfolio/IndeedIcon.png" %} id='indeed'></a>
+        </div>
+        <div><img src= {% static "/portfolio/columbus.jpg" %} class="images">
+        <div id="transition2"></div>
+        <h1 id="nametitle">Michael Brooks</h1>
+        <h1 id="portfolio1">Portfolio</h1>
+        </div>
+        <div id = "aboutbackground"><div class="aboutsection"><h1>Hello!</h1></div>
+        <p class="aboutcontent">I am Michael Brooks, a software engineer with skills in mulitple areas of the computer science field. I got to this point by
+            focusing on improving my problem solving skills, learning about data structures and algorithms then learning frame works and
+            technologies that allow me to create. Now I am focusing on my front-end skills and hope to start a career in front-end development.</p>
+            <img id="guy" src={% static "portfolio/1266207-200.png" %}>
+            <img id="monitor" src={% static "portfolio/monitor.png" %}>
+        </div>
+        <div class="transition"></div>
+        <div class="sectiontwo"><div id = ""><div id="projectTitle"><h1>Projects</h1></div>
+        <div id="projectcontainer">
+            <div id="projectchild1">
+                <h1>First Personal Website</h1>
+                <a href="https://github.com/michaelbrooks1234/Personal-Website"><img id="website" src={% static "portfolio/websiteiamge.PNG" %}></a>
+                <p id="websitetext">This was my first website that I made as a portfolio for myself. I used html and css and hosted it on a virtual linux machine.</p>
+            </div>
+            <div id="projectchild2">
+                <h1>NASA API GUI App</h1>
+                <a href="https://github.com/michaelbrooks1234/TkinterAPOD_App"><img id="nasaapp" src={% static "portfolio/whatda.PNG" %}></a>
+                <p id="nasatext">I made a gui app in Python that communicates with one of NASA's APIs that returns a json file and the app returns a picture and description.</p>
+            </div>
+            <div id="projectchild3">
+                <h1>GUI Calculator</h1>
+                <a href="https://github.com/michaelbrooks1234/Calculator_app"><img id="calculator" src={% static "portfolio/letsagooo.PNG" %}></a>
+                <p id="calctext">This was a calculator that I made in c++ using Qt. It is a simple calculator that can do addition, subtraction, division, and multiplication.</p>
+            </div>
+            <div id="projectchild4">
+                <h1>Personal-Portfolio</h1>
+                <a href="https://github.com/michaelbrooks1234/Calculator_app"><img id="nicepic" src={% static "portfolio/nicepic.PNG" %}></a>
+                <p id="porttext">This website was made with html, css, and javascript. I will be deploying it like my last website using django and a virtual linux machine.</p>
+            </div>
+            <div id="projectchild5">
+                <h1 id="message">You can contact me at michaelbrooks6897@gmail.com! It can be about anything at all. :)</h1>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div id="secondarybackground1"></div>
+        <div id="secondarybackground2"></div>
+        <div id="secondarybackground3"></div>   
+        <script src={% static 'portfolio/Index.js' %}></script>
+    </body>
+</html>
